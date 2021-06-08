@@ -1,12 +1,15 @@
 import '../styles/globals.css'
 import {RecoilRoot} from "recoil";
+import FirebaseProvider from "@/components/wrappers/FirebaseProvider";
 
 function MyApp({ Component, pageProps }) {
   return (
-    <RecoilRoot>
-      <Component {...pageProps} />
-    </RecoilRoot>
+    <FirebaseProvider>
+      <RecoilRoot>
+        <Component {...pageProps} />
+      </RecoilRoot>
+    </FirebaseProvider>
   )
 }
 
-export default MyApp
+export default MyApp;
