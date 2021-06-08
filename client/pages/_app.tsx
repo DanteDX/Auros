@@ -1,14 +1,21 @@
 import '../styles/globals.css'
 import {RecoilRoot} from "recoil";
 import FirebaseProvider from "@/components/wrappers/FirebaseProvider";
+import {FuegoProvider} from "@nandorojo/swr-firestore";
+import {Fuego} from "@/scripts/fuego";
+import {firebaseConfig} from "@/config/firebaseConfig";
+
+const fuego = new Fuego(firebaseConfig);
 
 function MyApp({ Component, pageProps }) {
   return (
-    <FirebaseProvider>
-      <RecoilRoot>
-        <Component {...pageProps} />
-      </RecoilRoot>
+    <FuegoProvider fuego={fuego}>
+       <FirebaseProvider>
+        <RecoilRoot>
+          <Component {...pageProps} />
+        </RecoilRoot>
     </FirebaseProvider>
+    </FuegoProvider>
   )
 }
 

@@ -8,6 +8,7 @@
     "start": "next start"
   },
   "dependencies": {
+    "@nandorojo/swr-firestore": "^0.16.0",
     "firebase": "^8.6.5",
     "next": "10.2.3",
     "react": "17.0.2",
