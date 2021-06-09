@@ -16,7 +16,7 @@ function MyApp({ Component, pageProps }) {
           <HomeBar />
           <Component {...pageProps} />
         </RecoilRoot>
-    </FirebaseProvider>
+      </FirebaseProvider>
     </FuegoProvider>
   )
 }
