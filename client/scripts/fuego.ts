@@ -1,7 +1,6 @@
 import firebase from "firebase/app";
 type Config = Parameters<typeof firebase.initializeApp>[0];
-
-export class Fuego{
+export class Fuego{ 
   public db: ReturnType<firebase.app.App["firestore"]>;
   public auth: typeof firebase.auth;
   public functions: typeof firebase.functions;
