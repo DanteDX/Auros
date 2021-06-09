@@ -5,7 +5,7 @@ import {fuego} from "@nandorojo/swr-firestore";
 import Link from "next/link";
 
 export default function HomeBar(){
-    const [user,loading] = useAuthState(fuego.auth());
+    const [user] = useAuthState(fuego.auth());
     return(
         <>
             <nav className={styles.wrapper}>

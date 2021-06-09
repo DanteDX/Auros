@@ -1,0 +1,8 @@
+.wrapper{
+    width:50vw;
+    height:50vw;
+    background-color: bisque;
+    border-radius: 10px;
+    margin:25vw 25vw;
+    padding:10px;
+}
