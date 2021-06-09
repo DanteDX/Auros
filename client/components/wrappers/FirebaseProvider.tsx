@@ -12,6 +12,7 @@ if(firebase.apps.length === 0){
 
 export const FirebaseContext = createContext({});
 
+
 export default function FirebaseProvider({children}){
     const [state,setState] = useState({});
     return(

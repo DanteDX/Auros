@@ -1,0 +1,12 @@
+.wrapper{
+    width:50vw;
+    height:50vh;
+    background-color: bisque;
+    border-radius: 10px;
+    margin:14vh auto;
+    padding:10px;
+    border:1px solid black;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
