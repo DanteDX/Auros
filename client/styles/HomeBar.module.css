@@ -11,7 +11,7 @@
     justify-content: space-around;
 }
 
-.list li{
+.list ul li{
     list-style-type: none;
     padding:0;
     margin:0;
@@ -22,6 +22,6 @@
     font-size: large;
 }
 
-.list li:hover{
+.list ul li:hover{
     cursor:pointer;
 }
