@@ -1,4 +1,4 @@
-import React, {useState,createContext,useEffect} from "react";
+import React, {useState,createContext} from "react";
 import firebase from "firebase/app";
 import "firebase/firestore";
 import "firebase/functions";
@@ -15,12 +15,6 @@ export const FirebaseContext = createContext({});
 
 export default function FirebaseProvider({children}){
     const [state,setState] = useState({});
-    useEffect(() => {
-        setState({
-          perf: firebase.performance(),
-          analytics: firebase.analytics()
-        });
-      }, []);
     return(
         <FirebaseContext.Provider value={state}>
             {children}

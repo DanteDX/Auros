@@ -41,12 +41,14 @@ export default function LogIn(){
                     <button onClick={async(e) =>{
                         try{
                             const credentials = await fuego.auth().createUserWithEmailAndPassword(state.userEmail,state.userPassword);
+                            setState(defaultState);
                             console.log("User Sign In Success");
                             console.log(credentials);
                             
                         }catch(err){
                             console.error("There was an error with Sign In");
                             console.error(err.message);
+                            setState(defaultState);
                         }
                     }}>Log In</button>
                 </div>
