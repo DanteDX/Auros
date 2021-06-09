@@ -10,12 +10,12 @@ export default function HomeBar(){
         <>
             <nav className={styles.wrapper}>
                 <ul className={styles.list}>
-                    <ul>
+                    <ul className={styles.sub}>
                         <li>Home</li>
                         <li>Profile</li>
                         <li>Settings</li>
                     </ul>
-                    <ul>
+                    <ul className={styles.sub}>
                         {!user ? (
                             <>
                                 <li>
