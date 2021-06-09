@@ -1,0 +1,27 @@
+.wrapper{
+    width:100vw;
+    height:7vh;
+    background-color: pink;
+}
+
+.list{
+    height:inherit;
+    width:inherit;
+    display:flex;
+    justify-content: space-around;
+}
+
+.list li{
+    list-style-type: none;
+    padding:0;
+    margin:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bolder;
+    font-size: large;
+}
+
+.list li:hover{
+    cursor:pointer;
+}
